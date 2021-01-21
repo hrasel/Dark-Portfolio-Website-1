@@ -1,0 +1,63 @@
+/*  Animation Related */
+@mixin transition-ease {
+  transition: all 0.5s ease-in-out;
+}
+/*  Flex Related */
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@mixin flex-y-center {
+  display: flex;
+  align-items: center;
+}
+@mixin flex-x-center {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin grid-y-center {
+  display: grid;
+  justify-content: center;
+}
+@mixin grid-x-center {
+  display: grid;
+  align-items: center;
+}
+/* Padding Related */
+@mixin xs-padding{
+  padding: 0 15px!important;
+}
+@mixin sm-padding{
+  padding: 0 20px;
+}
+@mixin md-padding{
+  padding: 0 30px!important;
+}
+@mixin lg-padding{
+  padding: 0 40px!important;
+}
+@mixin xl-padding{
+  padding: 0 60px!important;
+}
+@mixin media-xs {
+  @media screen and (max-width: 320px){
+    @content;
+  }
+}
+@mixin media-md {
+  @media screen and (min-width: 768px){
+    @content;
+  }
+}
+@mixin media-lg {
+  @media screen and (min-width: 1024px){
+    @content;
+  }
+}
+@mixin media-xl {
+  @media screen and (min-width: 1600px){
+    @content;
+  }
+}

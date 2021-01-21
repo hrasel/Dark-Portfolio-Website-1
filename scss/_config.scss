@@ -1,0 +1,27 @@
+$primary-color: #222831;
+$second-primary-color: hsl(216,10.1%,9.3%);
+$secondary-color: #00adb5;
+$light-color: #eeeeee;
+$dark-light-color: #bbb;
+$medium-color: #393e46;
+
+$xs-mobile: 500px;
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ul{
+  list-style: none;
+}
+/*** mixin start ***/
+/*  Animation  */
+
+@function set-text-color($color){
+  @if (lightness($color) > 40%) {
+    @return $primary-color;
+  } @else{
+    @return $light-color;
+  }
+}

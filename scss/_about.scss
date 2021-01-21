@@ -1,0 +1,123 @@
+#about-page{
+  .about-content{
+    section{
+      padding: 70px 20px;
+    }
+    .about-education{
+      .about-ul{
+        text-align: center;
+        li{
+          padding: 20px;
+          border: 1px solid #2c323a;
+          border-bottom: none;
+
+          h5{
+            color: $secondary-color;
+            font-size: 1rem;
+            margin-bottom: 10px;
+          }
+          h4{
+            color: $light-color;
+            margin-bottom: 10px;
+          }
+          p{
+            color: $dark-light-color;
+            margin-bottom: 10px;
+          }
+        }
+        li:last-child{
+          border-bottom: 1px solid #2c323a;
+        }
+      }
+    }
+    .about-skills{
+      background-color: $second-primary-color;
+      padding: 80px 30px;
+
+      li{
+        padding: 30px 0;
+        border: 1px solid $primary-color;
+        border-bottom: none;
+
+        h5{
+          margin-bottom: 10px;
+        }
+      }
+      li:last-child{
+        border-bottom: 1px solid $primary-color;
+      }
+      .progress{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 50px;
+
+        .progress-level{
+          display: flex;
+          flex-flow: column;
+          align-items: center;
+          margin-right: 20px;
+
+          .title{
+            margin-bottom: 10px;
+            color: #828282;
+
+            p{
+              font-size: 1rem;
+              font-weight: 400;
+            }
+          }
+        }
+        .indicators{
+          display: flex;
+
+          .indicator{
+            background: $medium-color;
+            width: 10px;
+            height: 10px;
+            margin: 0 3px;
+            border-radius: 50%;
+          }
+        }
+        .active{
+
+          .indicator{
+            background: $secondary-color;
+          }
+        }
+        .active{
+
+          .indicator{
+            background: $secondary-color;
+          }
+        }
+        .active{
+
+          .title{
+            p{
+              color: $secondary-color;
+            }
+          }
+          .indicator{
+            background: $secondary-color;
+          }
+        }
+      }
+      .progress-subject{
+        display: flex;
+        justify-content: center;
+        margin-top: 25px;
+
+        h4{
+          color: $light-color;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+
+  .foot{
+    position: relative;
+  }
+}

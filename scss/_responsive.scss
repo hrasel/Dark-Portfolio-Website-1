@@ -1,0 +1,197 @@
+@include media-xs{
+  .navigation{
+    @include xs-padding;
+    .logo{
+      font-size: 1.1rem!important;
+    }
+    .nav{
+      .nav-menu{
+        .nav-menu-item{
+          padding: 0.5rem 0!important;
+          font-size: 1rem!important;
+        }
+      }
+    }
+  }
+  h1{
+    font-size: 2rem!important;
+
+    .last{
+      font-size: 2.3rem!important;
+    }
+  }
+  .home-wrapper{
+    .home-image{
+      width: 180px;
+      height: 180px;
+
+      .image{
+        width: 160px;
+        height: 160px;
+      }
+    }
+  }
+  #about-page{
+    section{
+      padding: 50px 15px!important;
+    }
+    .about-education{
+      li{
+        border-bottom: 1px solid #2c323a;
+      }
+      li:last-child{
+        border-bottom: none;
+      }
+    }
+    .about-skills{
+      li{
+        border: none!important;
+        border-bottom: 1px solid #2c323a!important;
+      }
+      li:last-child{
+        border-bottom: none!important;
+      }
+    }
+  }
+}
+.copyright{
+  font-size: 14px;
+}
+@include media-md{
+  .navigation{
+    .logo{
+      font-size: 1.3rem!important;
+    }
+    .nav{
+      .nav-menu{
+        .nav-menu-item{
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+  h1{
+    font-size: 2.5rem!important;
+
+    .last{
+      font-size: 2.6rem!important;
+    }
+  }
+  h2{
+    font-size: 1.2rem!important;
+  }
+  #about-page{
+    .about-skills{
+
+      .progress{
+        p{
+          font-size: 1.2rem;
+          font-weight: 600;
+        }
+        .indicator{
+          width: 30px!important;
+          height: 30px!important;
+          margin: 0 3px;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+  .projects{
+    flex-direction: row!important;
+    flex-wrap: wrap!important;
+
+    .project-box{
+      width: 50%;
+    }
+  }
+  #whyWork-page{
+    .whyWork-items{
+      flex-direction: row!important;
+      flex-wrap: wrap;
+
+      .whyWork-item{
+        width: 50%;
+      }
+    }
+  }
+  #contact-page{
+    .contact-content{
+      flex-direction: row;
+
+      .contact-info{
+        width: 50%;
+        align-items: flex-end;
+        padding-right: 30px;
+        margin-bottom: 0;
+
+        .contact-item{
+          align-items: flex-end;
+        }
+      }
+      .contact-marketplace{
+        width: 50%;
+        align-items: flex-start;
+        padding-left: 30px;
+      }
+    }
+  }
+}
+@include media-lg{
+  .navigation{
+    .logo{
+      width: 20%;
+      font-size: 1.4rem!important;
+    }
+    .nav-btn{
+      display: none;
+    }
+    .nav{
+      position: initial!important;
+      width: 80%!important;
+      height: inherit!important;
+      .nav-menu{
+        visibility: visible;
+        transform: translateY(0);
+        flex-flow: row;
+        justify-content: flex-end;
+        .nav-menu-item{
+          opacity: 1;
+          font-size: 0.9rem;
+          letter-spacing: 1px;
+          a{
+            padding: 0.5rem 1rem;
+          }
+        }
+      }
+    }
+  }
+  h1{
+    font-size: 3rem!important;
+
+    .last{
+      font-size: 3.1rem!important;
+    }
+  }
+  .projects{
+    flex-direction: row!important;
+    flex-wrap: wrap!important;
+
+    .project-box{
+      width: 33.33%;
+    }
+  }
+  #whyWork-page{
+    .whyWork-items{
+      flex-direction: row!important;
+      flex-wrap: wrap;
+
+      .whyWork-item{
+        width: 33.33%;
+      }
+    }
+  }
+}
+@include media-xl{
+  
+}

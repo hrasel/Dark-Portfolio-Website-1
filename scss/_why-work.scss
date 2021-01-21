@@ -1,0 +1,46 @@
+#whyWork-page{
+
+  .whyWork-content{
+    padding: 80px 20px;
+
+    .whyWork-items{
+      display: flex;
+      flex-direction: column;
+     
+      .whyWork-item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(45deg, $second-primary-color, transparent);
+        padding: 40px 20px;
+        @include transition-ease;
+
+        &-icon{
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          background: $dark-light-color;
+          margin-bottom: 20px;
+        }
+        &-info{
+          text-align: center;
+
+          h4{
+            color: $light-color;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            @include transition-ease;
+          }
+          p{
+            color: $dark-light-color;
+          }
+        }
+      }
+      .whyWork-item:hover h4{
+        transform: scale(1.2);
+        color: $secondary-color;
+      }
+    }
+  }
+}
