@@ -39,4 +39,3 @@ This is a portfolio website created by Hossain Rasel.
     * _projects.scss
     * _why-work.scss
     * _contact.scss
-    * index.html
